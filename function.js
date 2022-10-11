@@ -91,7 +91,8 @@ const grade = (marks) => {
 // 4.
 
 const age = (names, bYear) => {
-  let age = 2022 - bYear;
+  let dateObject = new Date()
+  let age = dateObject.getYear() - bYear;
 
   return ` Your name is ${names} and your age is ${age} years old.`;
 };
